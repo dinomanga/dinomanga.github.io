@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+		body
+		{
+			background-color:gray;
+			
+			margin-left: 150px;
+			margin-right: 150px;
+			margin-top: 150px;
+			margin-bottom: 150px;
+			
+			font-family: Baskerville
+		}
+		
+		h1
+		{
+			font-size: 50px;
+			font-family: Times New Roman;
+			
+		}
+		
+		h2
+		{
+			font-size: 45px;
+			font-family: Palatino;
+			
+		}
+		
+		h3
+		{
+			font-size: 35px;
+		}
+		
+		p
+		{
+			font-size: 30px;
+		}
+		
