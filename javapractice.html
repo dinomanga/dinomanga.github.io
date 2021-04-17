@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+		
+		body
+		{
+			background-color:grey
+		}
+		
+	</style>
+	
+<meta charset="utf-8">
+	
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+<h1>Java Practice</h1>
+	
+<button type="button" onclick='document.getElementById("demo").innerHTML = "bacon and eggs with orange juice"'>breakfast?</button>
+	
+<button type="button" onclick='document.getElementById("demo").innerHTML = "turkey and cheese with tea"'>lunch?</button>
+	
+<button type="button" onclick='document.getElementById("demo").innerHTML = "pizza and fries with root beer"'>dinner?</button>
+	
+<button type="button" onclick='document.getElementById("demo").innerHTML = "ice cream and cake with water"'>dessert?</button>
+
+<p id="demo">What is your favorite meal of the day?</p>
+	
+
+<p>Enter what your favorite meal of the day is</p>
+	
+<input type="text" id="myText" value="Enter meal here...">
+	
+<button onclick="mealFunction()">Input Meal</button>
+	
+<p id="enjoyyourmeal"></p>
+	
+<script>
+
+function mealFunction()
+	{
+		var x = document.getElementById("myText").value;
+		document.getElementById("enjoyyourmeal").innerHTML = x;
+	}
+	
+</script>
+
+</body>
+	
+</html>

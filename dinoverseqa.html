@@ -22,15 +22,36 @@
 	
 <h1>Dinoverse Q/A</h1>
 	
-<button type="button" onclick="document.getElementByID('demo').innerHTML =Name(Dinomanga)">
+<button type="button" onclick="document.getElementById('demo').innerHTML =Name(Dinomanga)">
 click me to display</button>
 
-<button type="button" onclick='document.getElementByID("demo").innerHTML = "cookies...unless there is something else that is sweet"'>A snack to eat?</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "cookies...unless there is something else that is sweet"'>A snack to eat?</button>
 	
-<button type="button" onclick='document.getElementByID("demo").innerHTML = "My goal is to become a graphic artist"'>career?</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "My goal is to become a graphic artist"'>career?</button>
 	
-<button type="button" onclick='document.getElementByID("demo").innerHTML = "anime"'>What's my drawing style?</button>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "anime"'>What's my drawing style?</button>
 	
 <p id="demo">That's all you need to know about me</p>
+	
+	
+	
+<p>Enter your favorite snack</p>
+	
+<input type="text" id="myText" value="Enter snack here...">
+	
+<button onclick="snackFunction()">Input Snack</button>
+	
+<p id="enjoyyoursnack"></p>
+	
+<script>
+
+function snackFunction()
+	{
+		var x = document.getElementById("myText").value;
+		document.getElementById("enjoyyoursnack").innerHTML = x;
+	}
+	
+</script>
+
 </body>
 </html>
