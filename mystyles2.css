@@ -3,7 +3,16 @@
 
 		body
 		{
-			background-color:gray;
+			background-image: url("tropicalislandgif.gif");
+			background-repeat: no-repeat, repeat;
+			background-position: center;
+			background-size: cover;
+			text-align:center;
+			overflow:scroll;
+			background-attachment: fixed;
+			background-color:black;
+			text-shadow: 2xp, 2xp,;
+			color:black;
 			
 			margin-left: 150px;
 			margin-right: 150px;
@@ -24,6 +33,7 @@
 		{
 			font-size: 45px;
 			font-family: Palatino;
+			color:indigo
 			
 		}
 		
