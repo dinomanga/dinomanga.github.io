@@ -8,26 +8,21 @@
 	
 	<style>
 		
-		body 
-		
+		body
 		{
-	
-	
-		text-align: center;	  
-		overflow: scroll;
-		background-color: darkslateblue;
+			text-align: center;
+			overflow: scroll;
+			background-color: darkgreen;
 			
 		}
-			
+		
 	</style>
 	
 </head>
 
-	
-	
 <body>
 	
-	<h1>Sketching Time</h1>
+	<h1>Look at this circle, please</h1>
 	
 <canvas id="canvaspal" width="600" height="600" style="border:8px solid #202651;">
 
@@ -47,15 +42,16 @@ function shapesketcher()
 		
 	//circle 
 	ctx.beginPath();
-	ctx.arc(Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(100)+10), 0, 2 * Math.PI);
-	
-	ctx.strokeStyle = "#" +  Math.floor(Math.random()*0xFFFFFF).toString(16);
-
-	ctx.stroke();
+	ctx.arc(Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(80)+10), 0, 2 *  Math.PI);
+		
+	ctx.strokeStyle = "#" + Math.floor(Math.random()*0xFFFFFF).toString(16);
+		
+	ctx.stroke();;
 	
 	//rectangle 
 	ctx.beginPath();
 	ctx.rect(Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(600)+1), Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10));
+	
 	ctx.stroke();	
 		
 }
