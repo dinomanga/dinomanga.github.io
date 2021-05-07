@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+<head>
+	
+<meta charset="UTF-8">
+<title>classwork</title>
+	
+	<style>
+		
+		body 
+		
+		{
+	
+	
+		text-align: center;	  
+		overflow: scroll;
+		background-color: darkslateblue;
+			
+		}
+			
+	</style>
+	
+</head>
+
+	
+	
+<body>
+	
+	<h1>Sketching Time</h1>
+	
+<canvas id="canvaspal" width="600" height="600" style="border:8px solid #202651;">
+
+	browser does not support HTML canvas tag.
+	
+</canvas>
+	
+<script>
+	
+var c = document.getElementById ("canvaspal");
+
+var ctx = c.getContext("2d");
+
+function shapesketcher()
+
+{
+		
+//circle 
+ctx.beginPath();
+ctx.arc(Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10), 0, 2 * Math.PI);
+	
+ctx.strokeStyle = "#" +  Math.floor(Math.random()*0xFFFFFF).toString(16);
+
+ctx.stroke();
+	
+//rectangle 
+ctx.beginPath();
+ctx.rect(Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10), Math.floor(Math.random()*(100)+10));
+ctx.stroke();	
+		
+}
+	
+setInterval (shapesketcherr, 1000);
+	
+
+	
+</script>	
+	
+	
+	
+</body>
+	
+</html>
